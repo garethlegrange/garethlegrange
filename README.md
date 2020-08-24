@@ -1,7 +1,5 @@
 ### Front-End Web Developer
 
-Cape Town based senior front-end web developer with several years of experience in the field, currently working full-time for **Webafrica**.
-
 <!--
 **garethlegrange/garethlegrange** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
