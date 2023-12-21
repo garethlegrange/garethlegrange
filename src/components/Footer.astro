@@ -1,0 +1,14 @@
+---
+
+---
+
+<footer class="flex justify-between gap-4">
+  <small class="text-xs">&copy; <span id="date"></span> Gareth le Grange</small>
+  <!-- <a href="mailto:garethlegrange@gmail.com" class="text-xs">Contact</a> -->
+</footer>
+
+<script type="module">
+  const date = new Date();
+  let year = date.getFullYear();
+  document.getElementById("date").innerHTML = year;
+</script>

@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import exp from "@images/-10-years-4.svg";
+---
+
+<Layout title="Gareth le Grange - Front-end Developer">
+  <h1
+    class="font-serif text-2xl lg:text-6xl tracking-tight !leading-tight text-slate-950 mb-6 lg:mb-12"
+  >
+    <picture>
+      <source
+        srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.webp"
+        type="image/webp"
+      />
+      <img
+        src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.gif"
+        alt="👋"
+        class="float-left mr-4 w-7 lg:w-16 h-7 lg:h-16"
+      />
+    </picture>Hi, I'm Gareth, an <span id="e1">experienced</span> front-end
+    developer with a passion for creating engaging & <span id="e2">user-friendly</span> websites and
+    applications.
+  </h1>
+
+  <p class="text-slate-800 lg:text-lg mb-6">
+    I am currently a senior front-end developer at <strong>Webafrica</strong>,
+    based remotely in Muizenberg, South Africa.
+  </p>
+
+  <p class="text-slate-800 lg:text-lg mb-8 lg:mb-12">
+    Away from the keyboard, I am a husband to a beautiful wife and father to two
+    daughters - aged 15 and 2 months :)
+  </p>
+
+  <p class="text-lg border border-slate-800 bg-slate-800 p-8 rounded-3xl text-amber-50">
+    If you need a website, or have a project you would like to discuss, please
+    get in touch at garethlegrange [at] gmail [dot] com.
+  </p>
+</Layout>
+
+<script type="module">
+  // import {
+  //   annotate,
+  //   annotationGroup,
+  // } from "https://unpkg.com/rough-notation?module";
+
+  // const a1 = annotate(document.querySelector("#e1"), {
+  //   type: "underline",
+  //   color: "rgb(239 68 68)",
+  // });
+
+  // const a2 = annotate(document.querySelector("#e2"), {
+  //   type: "underline",
+  //   color: "rgb(239 68 68)",
+  // });
+
+  // const ag = annotationGroup([a1, a2]);
+
+  // ag.show();
+
+  import { annotate } from "https://unpkg.com/rough-notation?module";
+
+  const e1 = document.querySelector("#e1");
+  const annotation1 = annotate(e1, { type: "box", color: "#ef4444" });
+  annotation1.show();
+
+  const e2 = document.querySelector("#e2");
+  const annotation2 = annotate(e2, { type: "underline", color: "#ef4444" });
+  annotation2.show();
+</script>

@@ -1,0 +1,38 @@
+---
+import { ViewTransitions } from "astro:transitions";
+
+interface Props {
+  title: string;
+}
+
+import "@fontsource-variable/eb-garamond";
+import "@fontsource-variable/montserrat";
+import "@fontsource/noto-color-emoji";
+
+const { title } = Astro.props;
+
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Gareth le Grange - Front-end" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body
+    class="bg-amber-50/75 container mx-auto max-w-4xl py-12 px-8 flex flex-col gap-8 lg:gap-12 min-h-screen"
+    >
+    <Header />
+    <div class="grow">
+      <slot />
+    </div>
+    <Footer />
+  </body>
+</html>
