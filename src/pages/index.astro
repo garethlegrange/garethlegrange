@@ -1,13 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Contact from "../components/Contact.astro";
 ---
 
 <Layout title="Gareth le Grange - Front-end Developer">
   <h1
-    class="font-serif text-4xl lg:text-6xl tracking-tight !leading-tight text-slate-950 mb-6 lg:mb-12"
+    class="font-serif text-4xl lg:text-7xl tracking-tight !leading-tight text-slate-950 mb-6 lg:mb-12"
   >
-    <span>👋</span> Hi, I'm Gareth, an <span id="e1">experienced</span> front-end
-    developer with a passion for creating engaging &amp; <span
+    <span>👋</span> Hi, I'm Gareth, an <span id="e1">experienced</span>
+    front-end developer with a passion for creating engaging &amp; <span
       id="e2"
       class="text-nowrap">user-friendly</span
     > websites and applications.
@@ -18,12 +19,7 @@ import Layout from "../layouts/Layout.astro";
     based remotely in Muizenberg, South Africa.
   </p>
 
-  <p
-    class="text-lg border border-slate-800 bg-slate-800 p-8 rounded-3xl text-amber-50"
-  >
-    If you need a website, or have a project you would like to discuss, please
-    get in touch at garethlegrange [at] gmail [dot] com.
-  </p>
+  <Contact />
 </Layout>
 
 <script type="module">

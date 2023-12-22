@@ -2,12 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import Me from "@images/me.jpeg";
+import Contact from "../components/Contact.astro";
 ---
 
 <Layout title="About | Gareth le Grange - Front-end Developer">
   <h1 class="font-serif text-5xl mb-8">About</h1>
 
-  <div class="max-w-xs px-2.5 lg:max-w-none float-right lg:ml-8 mb-4 lg:mb-8">
+  <div class="max-w-xs px-2.5 lg:max-w-none sm:float-right lg:ml-8 mb-4 lg:mb-8">
     <Image
       src={Me}
       alt="Me"
@@ -40,10 +41,5 @@ import Me from "@images/me.jpeg";
     that meets the needs of users and clients alike.
   </p>
 
-  <p
-    class="text-lg border border-slate-800 bg-slate-800 p-8 rounded-3xl text-amber-50"
-  >
-    If you need a website, or have a project you would like to discuss, please
-    get in touch at garethlegrange [at] gmail [dot] com.
-  </p>
+  <Contact />
 </Layout>
