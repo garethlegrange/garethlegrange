@@ -1,5 +1,1 @@
-# Hello, I'm Gareth – A Senior Frontend Developer passionate about crafting user-centric websites and applications.
-
-With over a decade of experience, I specialize in transforming complex ideas into sleek, high-performing websites and applications. Currently, I'm a Senior Frontend Developer at Webafrica, where I lead the development of innovative, user-friendly features, working remotely from the beautiful Muizenberg, South Africa.
-
-I bring ideas to life using a suite of modern tools and technologies, including React, JavaScript, and CSS, to craft responsive and engaging user interfaces. My toolkit also includes TypeScript for type safety, Zustand for efficient state management, and Tailwind CSS for rapid, utility-first styling. By integrating these tools with agile methodologies and staying current with industry trends, I create clean, maintainable code and collaborate effectively with cross-functional teams. This approach ensures that my solutions are not only functional and high-quality but also deliver exceptional user experiences.
+Hello, I'm Gareth – A Senior Frontend Developer passionate about crafting user-centric websites and applications.
